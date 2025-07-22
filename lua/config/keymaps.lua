@@ -25,5 +25,6 @@ vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper win
 -- Custom keymaps. Maintain clipboard after replacing text
 vim.keymap.set('v', '<leader>p', '"_dP', { desc = '[P]aste replacement' })
 
-vim.keymap.set('n', '-', '<CMD>Oil<CR>', { desc = 'Open parent directory' })
+-- vim.keymap.set('n', '-', '<CMD>Oil<CR>', { desc = 'Open parent directory' })
+vim.keymap.set('n', '-', require("oil").open_float, { desc = 'Open parent directory' })
 vim.keymap.set('n', '<leader>d', '<CMD>bdelete<CR>', { desc = '[D]elete buffer' })
