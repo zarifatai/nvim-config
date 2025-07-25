@@ -68,3 +68,9 @@ vim.o.confirm = true
 
 -- Currently disabled until fixed for Telescope. See GitHub issue https://github.com/nvim-telescope/telescope.nvim/issues/3436
 -- vim.o.winborder = 'rounded'
+
+
+vim.o.shiftwidth = 2
+vim.o.tabstop = 2
+vim.o.softtabstop = 2
+vim.o.expandtab = true

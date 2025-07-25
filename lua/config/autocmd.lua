@@ -13,11 +13,11 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 
 -- Set indendation for html, js-like, and lua files
 vim.api.nvim_create_autocmd('FileType', {
-  pattern = { 'svelte', 'html', 'css', 'javascript', 'typescript', 'lua' },
+  pattern = { 'python', 'rust' },
   callback = function()
-    vim.opt_local.shiftwidth = 2
-    vim.opt_local.tabstop = 2
-    vim.opt_local.softtabstop = 2
+    vim.opt_local.shiftwidth = 4
+    vim.opt_local.tabstop = 4
+    vim.opt_local.softtabstop = 4
     vim.opt_local.expandtab = true
   end,
 })
