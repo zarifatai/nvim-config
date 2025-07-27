@@ -8,10 +8,7 @@ vim.api.nvim_create_autocmd('LspAttach', {
       vim.keymap.set(mode, keys, func, { buffer = event.buf, desc = 'LSP: ' .. desc })
     end
 
-    vim.keymap.set('n', 'K', function()
-      vim.lsp.buf.hover { border = 'rounded' }
-    end, { buffer = event.buf, desc = 'LSP: Open documentation' })
-
+    vim.keymap.set('n', 'K', vim.lsp.buf.hover, { buffer = event.buf, desc = 'LSP: Open documentation' })
 
     -- Rename the variable under your cursor.
     --  Most Language Servers support renaming across files, etc.
@@ -94,8 +91,7 @@ vim.api.nvim_create_autocmd('LspAttach', {
 -- Diagnostics
 vim.diagnostic.config {
   severity_sort = true,
-  float = { border = 'rounded', source = 'if_many' },
-  -- underline = { severity = vim.diagnostic.severity.ERROR },
+  float = { source = 'if_many' },
   signs = vim.g.have_nerd_font and {
     text = {
       [vim.diagnostic.severity.ERROR] = '󰅚 ',

@@ -66,8 +66,7 @@ vim.o.scrolloff = 5
 -- See `:help 'confirm'`
 vim.o.confirm = true
 
--- Currently disabled until fixed for Telescope. See GitHub issue https://github.com/nvim-telescope/telescope.nvim/issues/3436
--- vim.o.winborder = 'rounded'
+vim.o.winborder = 'rounded'
 
 
 vim.o.shiftwidth = 2
