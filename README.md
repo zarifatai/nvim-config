@@ -15,5 +15,5 @@ To install `rust-analyzer` I used `rustup component add rust-analyzer` and added
 I installed the remaining language servers with my package manager `pacman`:
 
 ```[bash]
-sudo pacman -S pyright typescript-language-server lua-language-server svelte-language-server tailwindcss-language-server
+sudo pacman -S pyright typescript-language-server lua-language-server svelte-language-server tailwindcss-language-server vscode-json-language-server
 ```
