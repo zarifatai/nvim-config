@@ -1,6 +1,8 @@
 return {
-  'rebelot/kanagawa.nvim',
+  'vague2k/vague.nvim',
+  lazy = false,
+  priority = 1000,
   config = function()
-    vim.cmd.colorscheme 'kanagawa'
+    vim.cmd.colorscheme 'vague'
   end,
 }
