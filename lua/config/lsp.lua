@@ -1,4 +1,4 @@
-vim.lsp.enable { 'rust_analyzer', 'lua_ls', 'pyright', 'tailwindcss', 'ts_ls', 'svelte', 'json' }
+vim.lsp.enable { 'rust_analyzer', 'lua_ls', 'pyright', 'tailwindcss', 'ts_ls', 'svelte', 'json', 'marksman' }
 
 vim.api.nvim_create_autocmd('LspAttach', {
   group = vim.api.nvim_create_augroup('kickstart-lsp-attach', { clear = true }),
