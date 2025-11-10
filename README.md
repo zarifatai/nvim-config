@@ -10,10 +10,6 @@ Feel free to use my Neovim configuration (version >0.11 is required). Many setti
 ### LSP Setup
 I use `vim.lsp.enable` to set up my language servers.
 
-To install `rust-analyzer` I used `rustup component add rust-analyzer` and added `$HOME/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/bin` to `PATH`.
+To install `rust-analyzer` I use `rustup component add rust-analyzer` and add `$HOME/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/bin` to `PATH`.
 
-I installed the remaining language servers with my package manager `pacman`:
-
-```[bash]
-sudo pacman -S pyright typescript-language-server lua-language-server svelte-language-server tailwindcss-language-server vscode-json-language-server
-```
+I install the remaining language servers with one or more package managers (e.g. `pacman`, `npm`).
