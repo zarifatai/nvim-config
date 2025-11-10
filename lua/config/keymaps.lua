@@ -27,5 +27,9 @@ vim.keymap.set('v', '<leader>p', '"_dP', { desc = '[P]aste replacement' })
 
 -- vim.keymap.set('n', '-', '<CMD>Oil<CR>', { desc = 'Open parent directory' })
 -- vim.keymap.set('n', '-', require("oil").open_float, { desc = 'Open parent directory' })
-vim.keymap.set('n', '<leader>-', require("fyler").toggle, { desc = 'Open parent directory' })
+-- vim.keymap.set('n', '<leader>-', require("fyler").toggle, { desc = 'Open parent directory' })
 vim.keymap.set('n', '<leader>d', '<CMD>bdelete<CR>', { desc = '[D]elete buffer' })
+
+vim.keymap.set('n', '<leader>-', '<CMD>Yazi<CR>', { desc = 'Open current file directory' })
+vim.keymap.set('n', '<leader>cw', '<CMD>Yazi cwd<CR>', { desc = 'Open current working directory' })
+vim.keymap.set('n', '<C-up>', '<CMD>Yazi toggle<CR>', { desc = 'Resume last Yazi session' })
