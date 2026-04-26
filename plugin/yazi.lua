@@ -1,10 +1,5 @@
-return {
-  "mikavilpas/yazi.nvim",
-  version = "*", -- use the latest stable version
-  event = "VeryLazy",
-  dependencies = {
-    { "nvim-lua/plenary.nvim", lazy = true },
-  },
+vim.pack.add({ 'https://github.com/mikavilpas/yazi.nvim' })
+require('yazi').setup({
   keys = {
     -- 👇 in this section, choose your own keymappings!
     {
@@ -40,4 +35,8 @@ return {
     -- More details: https://github.com/mikavilpas/yazi.nvim/issues/802
     vim.g.loaded_netrwPlugin = 1
   end,
-}
+
+})
+
+-- Dependencies
+-- - plenary.nvim

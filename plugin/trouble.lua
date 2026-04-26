@@ -1,6 +1,5 @@
-return {
-  'folke/trouble.nvim',
-  opts = {}, -- for default options, refer to the configuration section for custom setup.
+vim.pack.add({ 'https://github.com/folke/trouble.nvim' })
+require('trouble').setup({
   cmd = 'Trouble',
   keys = {
     {
@@ -34,4 +33,4 @@ return {
       desc = 'Quickfix List (Trouble)',
     },
   },
-}
+})
