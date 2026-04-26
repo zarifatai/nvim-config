@@ -9,3 +9,6 @@ Feel free to use my Neovim configuration (version >=0.12 is required).
 
 ### LSP Setup
 `vim.lsp.enable` is used to set up language servers. To install `rust-analyzer` use `rustup component add rust-analyzer` and add `$HOME/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/bin` to `PATH`. Other language servers can be installed using package managers (e.g. `pacman`, `npm`).
+
+### Treesitter
+`nvim-treesitter` is a plugin that is part of this configuration. This plugin requires the tool `tree-sitter` to install language parsers. This tool can be installed using a package manager.
