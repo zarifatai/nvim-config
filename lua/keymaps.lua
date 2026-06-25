@@ -33,3 +33,7 @@ vim.keymap.set('n', '<leader>d', '<CMD>bdelete<CR>', { desc = '[D]elete buffer' 
 vim.keymap.set('n', '<leader>-', '<CMD>Yazi<CR>', { desc = 'Open current file directory' })
 vim.keymap.set('n', '<leader>cw', '<CMD>Yazi cwd<CR>', { desc = 'Open current working directory' })
 vim.keymap.set('n', '<C-up>', '<CMD>Yazi toggle<CR>', { desc = 'Resume last Yazi session' })
+
+vim.keymap.set('n', '<leader>xx', '<cmd>Trouble diagnostics toggle<cr>', { desc = 'Diagnostics (Trouble)' })
+vim.keymap.set('n', '<leader>xX', '<cmd>Trouble diagnostics toggle filter.buf=0<cr>',
+  { desc = 'Buffer Diagnostics (Trouble)' })
